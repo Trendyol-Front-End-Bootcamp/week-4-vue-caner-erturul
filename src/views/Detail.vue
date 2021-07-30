@@ -15,22 +15,21 @@
             >{{ starship.hyperdrive_rating }}
           </p>
           <p>
-            <span class="ship-passengers">Model : </span>{{ starship.model }}
+            <span class="ship-passengers">Passengers : </span
+            >{{ starship.passengers }}
           </p>
           <p>
-            <span class="ship-speed">Hyperdrive Rating : </span
-            >{{ starship.hyperdrive_rating }}
+            <span class="ship-crew">Max Atmosphering Speed : </span
+            >{{ starship.max_atmosphering_speed }}
           </p>
           <p>
-            <span class="ship-manufacturer">Model : </span>{{ starship.model }}
+            <span class="ship-manufacturer">Manufacturer : </span
+            >{{ starship.manufacturer }}
           </p>
+          <p><span class="ship-crew">Crew : </span>{{ starship.crew }}</p>
           <p>
-            <span class="ship-crew">Hyperdrive Rating : </span
-            >{{ starship.hyperdrive_rating }}
-          </p>
-          <p>
-            <span class="ship-capacity">Hyperdrive Rating : </span
-            >{{ starship.hyperdrive_rating }}
+            <span class="ship-capacity">Cargo Capacity : </span
+            >{{ starship.cargo_capacity }}
           </p>
         </div>
       </div>
