@@ -39,7 +39,8 @@
 </template>
 
 <script>
-import axios from "axios";
+import { getStarshipDetail } from "../services/index";
+
 import Loading from "@/components/TheLoading.vue";
 
 export default {
@@ -54,18 +55,21 @@ export default {
     };
   },
   methods: {
-    fetchSingleStarshipData(id) {
-      this.loading = true;
+    async getStarshipDetail(id) {
+      try {
+        this.loading = true;
 
-      axios.get(`https://swapi.dev/api/starships/${id}`).then((response) => {
-        console.log(response.data);
-        this.starship = response.data;
+        const starshipData = await getStarshipDetail(id);
+        this.starship = starshipData;
+
         this.loading = false;
-      });
+      } catch (err) {
+        console.log(err);
+      }
     },
   },
   created() {
-    this.fetchSingleStarshipData(this.$route.params.id);
+    this.getStarshipDetail(this.$route.params.id);
   },
 };
 </script>

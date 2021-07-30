@@ -1,14 +1,14 @@
 <template>
   <div class="buttons-container">
     <button
-      class="btn"
+      class="btn-prev"
       v-if="pagination.previous"
       @click="$emit('get-page', pagination.previous)"
     >
       PREVIOUS
     </button>
     <button
-      class="btn"
+      class="btn-next"
       v-if="pagination.next"
       @click="$emit('get-page', pagination.next)"
     >
@@ -33,7 +33,8 @@ export default {
   padding-top: 50px;
   gap: 860px;
 }
-.btn {
+.btn-prev,
+.btn-next {
   color: #ebed00;
   position: relative;
   background: transparent;
