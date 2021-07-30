@@ -2,7 +2,7 @@
 
 ## About Project
 
-### This is a simple vue.js project that lists Star Wars starships and their details and search starships with name or model.
+ This is a simple vue.js project that lists Star Wars starships and their details and search starships with name or model.
 
 ## Try Demo
 
