@@ -5,7 +5,7 @@ import {
   getStarshipDetail,
   searchStarship,
   getPage,
-} from "../../src/services/index";
+} from "../../../src/services/index";
 
 jest.mock("axios");
 
